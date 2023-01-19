@@ -83,11 +83,6 @@ namespace Bil203_6_FinalProject
             connection.Close();
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void form3_back_Click(object sender, EventArgs e)
         {
             this.Hide();

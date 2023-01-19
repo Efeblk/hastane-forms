@@ -75,17 +75,22 @@ namespace Bil203_6_FinalProject
             form4.Show();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_id.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txt_isim.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txt_hastalik_tur.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            txt_hastalik_detay.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            txt_yatis_tarihi.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            txt_cinsiyet.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            txt_yas.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            txt_taburcu_tarihi.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
-            txt_uygulanan_tedavi.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                txt_id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                txt_isim.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                txt_hastalik_tur.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                txt_hastalik_detay.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                txt_yatis_tarihi.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                txt_cinsiyet.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                txt_yas.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                txt_taburcu_tarihi.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                txt_uygulanan_tedavi.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+            }
+            
         }
     }
 }
