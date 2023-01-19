@@ -60,7 +60,7 @@ namespace Bil203_6_FinalProject
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 40);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(452, 302);
+            this.listView1.Size = new System.Drawing.Size(693, 302);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -68,6 +68,7 @@ namespace Bil203_6_FinalProject
             // columnHeader1
             // 
             this.columnHeader1.Text = "Id";
+            this.columnHeader1.Width = 40;
             // 
             // columnHeader2
             // 
@@ -76,14 +77,17 @@ namespace Bil203_6_FinalProject
             // columnHeader3
             // 
             this.columnHeader3.Text = "hastalık türü";
+            this.columnHeader3.Width = 80;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "hastalık detay";
+            this.columnHeader4.Width = 100;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "yatış tarihi";
+            this.columnHeader5.Width = 80;
             // 
             // columnHeader6
             // 
@@ -96,14 +100,16 @@ namespace Bil203_6_FinalProject
             // columnHeader8
             // 
             this.columnHeader8.Text = "taburcu tarihi";
+            this.columnHeader8.Width = 100;
             // 
             // columnHeader9
             // 
             this.columnHeader9.Text = "uygulanan tedavi";
+            this.columnHeader9.Width = 120;
             // 
             // form3_txt_listele
             // 
-            this.form3_txt_listele.Location = new System.Drawing.Point(501, 70);
+            this.form3_txt_listele.Location = new System.Drawing.Point(718, 92);
             this.form3_txt_listele.Name = "form3_txt_listele";
             this.form3_txt_listele.Size = new System.Drawing.Size(75, 23);
             this.form3_txt_listele.TabIndex = 1;
@@ -113,7 +119,7 @@ namespace Bil203_6_FinalProject
             // 
             // form2_txt_sil
             // 
-            this.form2_txt_sil.Location = new System.Drawing.Point(501, 144);
+            this.form2_txt_sil.Location = new System.Drawing.Point(718, 136);
             this.form2_txt_sil.Name = "form2_txt_sil";
             this.form2_txt_sil.Size = new System.Drawing.Size(75, 23);
             this.form2_txt_sil.TabIndex = 2;
@@ -123,7 +129,7 @@ namespace Bil203_6_FinalProject
             // 
             // form3_back
             // 
-            this.form3_back.Location = new System.Drawing.Point(501, 232);
+            this.form3_back.Location = new System.Drawing.Point(718, 181);
             this.form3_back.Name = "form3_back";
             this.form3_back.Size = new System.Drawing.Size(75, 23);
             this.form3_back.TabIndex = 3;
@@ -135,7 +141,7 @@ namespace Bil203_6_FinalProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 381);
+            this.ClientSize = new System.Drawing.Size(862, 381);
             this.Controls.Add(this.form3_back);
             this.Controls.Add(this.form2_txt_sil);
             this.Controls.Add(this.form3_txt_listele);

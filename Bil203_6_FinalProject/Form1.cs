@@ -32,7 +32,9 @@ namespace Bil203_6_FinalProject
             connection.Open();
         
             SqlCommand command = new SqlCommand("SELECT * FROM [hastane].[dbo].[hasta]", connection);
-            //SqlCommand querry = new SqlCommand("SELECT * From [hastane].[dbo].[hasta] WHERE Id = '" + txt_id.Text + "' AND isim = '" + txt_isim.Text + "' AND [hastalık türü] = '" + txt_hastalik_tur.Text + "' AND [hastalık detay] = '" + txt_hastalik_detay.Text + "' AND [yatış tarihi] = '" + txt_yatis_tarihi.Text + "' AND Cinsiyet = '" + txt_cinsiyet.Text + "' AND Yaş = '" + txt_yas.Text + "' AND [Taburcu Tarihi] = '" + txt_taburcu_tarihi.Text + "' AND [Uygulanan Tedaviler] = '" + txt_uygulanan_tedavi.Text + "'");
+            SqlCommand command3 = new SqlCommand("SELECT COUNT (*) FROM [hastane].[dbo].[hasta]", connection);
+            string i = Convert.ToString(command3.ExecuteScalar());
+            txt_toplam.Text = i;
             SqlDataAdapter sda = new SqlDataAdapter(command);
             DataTable tablo = new DataTable();
             sda.Fill(tablo);

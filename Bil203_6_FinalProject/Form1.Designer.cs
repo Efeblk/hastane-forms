@@ -53,6 +53,8 @@ namespace Bil203_6_FinalProject
             this.btn_ekle = new System.Windows.Forms.Button();
             this.txt_sil = new System.Windows.Forms.Button();
             this.btn_guncelle = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_toplam = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,7 +119,7 @@ namespace Bil203_6_FinalProject
             this.yas.Name = "yas";
             this.yas.Size = new System.Drawing.Size(24, 15);
             this.yas.TabIndex = 6;
-            this.yas.Text = "yaş";
+            this.yas.Text = "Yaş";
             // 
             // taburcu_tarihi
             // 
@@ -202,7 +204,7 @@ namespace Bil203_6_FinalProject
             // 
             // btn_ara
             // 
-            this.btn_ara.Location = new System.Drawing.Point(197, 301);
+            this.btn_ara.Location = new System.Drawing.Point(324, 303);
             this.btn_ara.Name = "btn_ara";
             this.btn_ara.Size = new System.Drawing.Size(75, 23);
             this.btn_ara.TabIndex = 18;
@@ -223,7 +225,7 @@ namespace Bil203_6_FinalProject
             // 
             // btn_ekle
             // 
-            this.btn_ekle.Location = new System.Drawing.Point(324, 303);
+            this.btn_ekle.Location = new System.Drawing.Point(462, 303);
             this.btn_ekle.Name = "btn_ekle";
             this.btn_ekle.Size = new System.Drawing.Size(75, 23);
             this.btn_ekle.TabIndex = 20;
@@ -233,7 +235,7 @@ namespace Bil203_6_FinalProject
             // 
             // txt_sil
             // 
-            this.txt_sil.Location = new System.Drawing.Point(416, 303);
+            this.txt_sil.Location = new System.Drawing.Point(543, 303);
             this.txt_sil.Name = "txt_sil";
             this.txt_sil.Size = new System.Drawing.Size(75, 23);
             this.txt_sil.TabIndex = 21;
@@ -243,7 +245,7 @@ namespace Bil203_6_FinalProject
             // 
             // btn_guncelle
             // 
-            this.btn_guncelle.Location = new System.Drawing.Point(507, 303);
+            this.btn_guncelle.Location = new System.Drawing.Point(624, 303);
             this.btn_guncelle.Name = "btn_guncelle";
             this.btn_guncelle.Size = new System.Drawing.Size(75, 23);
             this.btn_guncelle.TabIndex = 22;
@@ -251,11 +253,29 @@ namespace Bil203_6_FinalProject
             this.btn_guncelle.UseVisualStyleBackColor = true;
             this.btn_guncelle.Click += new System.EventHandler(this.btn_guncelle_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(40, 303);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 15);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Toplam Hasta";
+            // 
+            // txt_toplam
+            // 
+            this.txt_toplam.Location = new System.Drawing.Point(172, 294);
+            this.txt_toplam.Name = "txt_toplam";
+            this.txt_toplam.Size = new System.Drawing.Size(100, 23);
+            this.txt_toplam.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1164, 380);
+            this.Controls.Add(this.txt_toplam);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_guncelle);
             this.Controls.Add(this.txt_sil);
             this.Controls.Add(this.btn_ekle);
@@ -313,6 +333,8 @@ namespace Bil203_6_FinalProject
         private System.Windows.Forms.Button btn_ekle;
         private System.Windows.Forms.Button txt_sil;
         private System.Windows.Forms.Button btn_guncelle;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_toplam;
     }
 }
 

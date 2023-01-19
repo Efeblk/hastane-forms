@@ -176,7 +176,7 @@ namespace Bil203_6_FinalProject
             // 
             this.form3_btn_guncelle.Location = new System.Drawing.Point(752, 313);
             this.form3_btn_guncelle.Name = "form3_btn_guncelle";
-            this.form3_btn_guncelle.Size = new System.Drawing.Size(138, 23);
+            this.form3_btn_guncelle.Size = new System.Drawing.Size(100, 23);
             this.form3_btn_guncelle.TabIndex = 11;
             this.form3_btn_guncelle.Text = "Güncelle";
             this.form3_btn_guncelle.UseVisualStyleBackColor = true;
@@ -191,7 +191,7 @@ namespace Bil203_6_FinalProject
             // 
             // form4_btn_back
             // 
-            this.form4_btn_back.Location = new System.Drawing.Point(921, 313);
+            this.form4_btn_back.Location = new System.Drawing.Point(882, 314);
             this.form4_btn_back.Name = "form4_btn_back";
             this.form4_btn_back.Size = new System.Drawing.Size(75, 23);
             this.form4_btn_back.TabIndex = 13;
